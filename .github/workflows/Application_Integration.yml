@@ -1,5 +1,5 @@
 name: This workflow is for Project Integration work purpose
-on: [push,workflow_dispatch]
+on: workflow_dispatch
 jobs:
     Integration_Job:
               runs-on: ubuntu-22.04
@@ -8,5 +8,5 @@ jobs:
                   run: echo "Logged in"
                 - name: Run Multiline commands
                   run: |
-                  echo "Hello, this is line1"
-                  echo "Hello, this is line2"
+                      echo "Hello, this is line1"
+                      echo "Hello, this is line2"
