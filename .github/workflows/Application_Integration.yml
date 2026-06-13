@@ -17,5 +17,5 @@ jobs:
                      run: echo "Deploying the Application"
                    - name: This is to work on multi line
                      run: |
-                     echo " This is line 1 from Deployment Job"
-                     echo " This is line 2 from Deployment Job"
+                         echo " This is line 1 from Deployment Job"
+                         echo " This is line 2 from Deployment Job"
