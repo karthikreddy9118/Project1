@@ -1,0 +1,8 @@
+name: This workflow is for Project Integration work purpose
+on: [push,workflow_dispatch]
+jobs:
+    Integration_Job:
+              runs-on: ubuntu-22.04
+              steps:
+                - name: Login to the git repo
+                  run: echo "Logged in"
