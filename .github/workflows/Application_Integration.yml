@@ -12,6 +12,7 @@ jobs:
                       echo "Hello, this is line2"
     Deployment_Job:
                runs-on: ubuntu-latest
+               needs: Integration_Job
                steps:
                    - name: This is to deploy the application 
                      run: echo "Deploying the Application"
