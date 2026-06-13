@@ -1,5 +1,13 @@
 name: This workflow is for Project Integration work purpose
-on: workflow_dispatch
+on: 
+    push:
+        branches:
+            - feature/a*
+    pull_request:
+        types:
+            - opened
+        branches:
+            - main
 jobs:
     Integration_Job:
               runs-on: ubuntu-22.04
