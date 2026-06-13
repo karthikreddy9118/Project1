@@ -6,3 +6,7 @@ jobs:
               steps:
                 - name: Login to the git repo
                   run: echo "Logged in"
+                - name: Run Multiline commands
+                  run: |
+                  echo "Hello, this is line1"
+                  echo "Hello, this is line2"
