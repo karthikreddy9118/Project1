@@ -28,3 +28,11 @@ jobs:
                      run: |
                          echo " This is line 1 from Deployment Job"
                          echo " This is line 2 from Deployment Job"
+    Test_Vars_Secrets:
+        runs-on: ubuntu-latest
+        needs: Deployment_Job
+        steps:
+            - name: This is to test Variable
+              run: echo "This is from Repository variables my address is ${{vars.ADDRESS}}
+            - name: This is to test the secrets
+              run: echo "The secret is ${{secrets.MY_TEST_SECRET}}
