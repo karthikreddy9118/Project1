@@ -7,13 +7,13 @@ jobs:
         - name: Checkout the repo
           uses: actions/checkout@v6
         - name: Aws authentication
-          uses: actions/configure-aws-credentials
+          uses: actions/configure-aws-credentials@v4
           with:
             aws-access-key-id: ${{secrets.aws_userinfo}}
             aws-secret-access-key: ${{secrets.aws_passwords}}
             aws-region: au-west-1a
         - name: Copy the code to S3 bucket
           run: |
-            aws s3 sync ./ s3://bucketname /
-            exclude "*" /
+            aws s3 sync ./ s3://bucketname \
+            exclude "*" \
             include "index.html" 
