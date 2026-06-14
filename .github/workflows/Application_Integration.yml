@@ -1,4 +1,4 @@
-name: This workflow is for Project Integration work purpose
+name: This is test workflow
 on: 
     push:
         branches:
