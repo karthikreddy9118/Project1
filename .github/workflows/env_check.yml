@@ -11,4 +11,6 @@ jobs:
       - name: This is just primary test
         run: echo "Hello"
       - name: This is to test environment variables
+        env:
+          ENV_INFO: Production
         run: echo "This is from environment $ENV_INFO"
