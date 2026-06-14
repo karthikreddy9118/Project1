@@ -4,6 +4,8 @@ env:
   ENV_INFO: test
 jobs:
   environment_variables_test:
+    env:
+      ENV_INFO: Dev
     runs-on: ubuntu-latest
     steps:
       - name: This is just primary test
