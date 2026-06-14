@@ -34,6 +34,6 @@ jobs:
         needs: Deployment_Job
         steps:
             - name: This is to test Variable
-              run: echo "This is from Repository variables my address is ${{vars.ADDRESS}}
+              run: echo "This is from Repository variables my address is ${{vars.ADDRESS}}"
             - name: This is to test the secrets
-              run: echo "The secret is ${{secrets.MY_TEST_SECRET}}
+              run: echo "The secret is ${{secrets.MY_TEST_SECRET}}"
