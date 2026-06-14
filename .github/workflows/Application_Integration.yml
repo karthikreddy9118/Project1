@@ -8,6 +8,7 @@ on:
             - opened
         branches:
             - main
+    workflow_dispatch:
 jobs:
     Integration_Job:
               runs-on: ubuntu-22.04
