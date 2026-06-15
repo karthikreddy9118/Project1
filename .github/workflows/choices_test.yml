@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: This is the environment where it will execute
-        run: "Hello, Your code is going to deploy in ${{inputs.environment_info}}"
+        run: echo "Hello, Your code is going to deploy in ${{inputs.environment_info}}"
