@@ -1,0 +1,8 @@
+name: Workflow to get context variables
+on: workflow_dispatch
+jobs:
+  context_vars_Info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get context variables Info
+        run: echo "This workflow is executed by ${{ github.user }} "
