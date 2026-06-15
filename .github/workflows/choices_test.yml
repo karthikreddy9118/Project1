@@ -1,15 +1,16 @@
 name: This is to test the choices while workflow execution
-on: workflow_dispatch:
-  inputs:
-    environment_info:
-      description: Select which environment to execute the workflow
-      required: true
-      type: choice
-      options:
-        - Test
-        - Dev
-        - Stg
-        - Prod
+on: 
+  workflow_dispatch:
+    inputs:
+      environment_info:
+        description: Select which environment to execute the workflow
+        required: true
+        type: choice
+        options:
+          - Test
+          - Dev
+          - Stg
+          - Prod
 jobs:
   Code_deployment:
     runs-on: ubuntu-latest
