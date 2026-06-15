@@ -7,7 +7,7 @@ jobs:
       - name: Get context variables Info
         run: echo "This workflow is executed by ${{ github.actor }} "
       - name: To get repo details
-        run: echo "The repo is ${{github.repository}}
+        run: echo "The repo is ${{github.repository}}"
       - name: To list all the context variables in github
         run: echo "{{tojson(github)}}"
       - name: To print env variables
