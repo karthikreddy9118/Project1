@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get context variables Info
-        run: echo "This workflow is executed by ${{ github.user }} "
+        run: echo "This workflow is executed by ${{ github.actor }} "
