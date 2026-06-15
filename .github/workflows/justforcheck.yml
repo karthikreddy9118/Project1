@@ -1,0 +1,10 @@
+name: to check avariables inside the workflow
+env:
+  x: 10
+on: workflow_dispatch
+jobs:
+  varaibles_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: The variable check
+        run: echo "The value oof variable define in the workflow is ${{ env.x }}"
