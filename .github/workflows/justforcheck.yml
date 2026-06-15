@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: The variable check
-        run: echo "The value oof variable define in the workflow is ${{ env.x }}"
+        run: echo "The value oof variable define in the workflow is $x"
