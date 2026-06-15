@@ -9,6 +9,6 @@ jobs:
       - name: To get repo details
         run: echo "The repo is ${{github.repository}}"
       - name: To list all the context variables in github
-        run: echo "{{toJson(github)}}"
+        run: echo "${{toJson(github)}}"
       - name: To print env variables
         run: echo "$GITHUB_SHA"
