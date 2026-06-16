@@ -1,0 +1,11 @@
+name: This workflow is to test the outputs
+on: workflow_dispatch
+jobs:
+  os_info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the OS info
+        id: OSID
+        run: echo "OS=Redhat" >> $GITHUB_OUTPUT
+      - name: Print the info
+        run: echo " The installed OS in all the environments is ${{steps.OSID.outputs.OS}}"
