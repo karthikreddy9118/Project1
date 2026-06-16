@@ -1,5 +1,5 @@
 name: This is to update S3 bucket with the code
-on: push
+on: workflow_dispatch
 jobs:
   Copying_the_code:
       runs-on: ubuntu-latest
