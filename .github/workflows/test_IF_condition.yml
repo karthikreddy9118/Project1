@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: testing scenarios use IF condition
-        if: github.ref_name == 'main'
+        if: github.ref_name == 'main' || 'feature/a_test'
         run: echo "This is tested using IF condition"
       - name: Testing without condition
         run: echo "This is without testing"
