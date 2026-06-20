@@ -1,8 +1,5 @@
 name: This workflow is for test purpose
 on: 
-    push:
-        branches:
-            - feature/a*
     pull_request:
         types:
             - opened
