@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Job
+        if: github.event_name == 'pull_request'
         run: echo "This is running from Build Job"
   Deploy_Job:
     runs-on: ubuntu-latest
