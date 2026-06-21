@@ -22,5 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy job
+        if: github.event_name == 'push' && github.ref_name == 'main'
         run: echo "This is from Deploy Job"
         
