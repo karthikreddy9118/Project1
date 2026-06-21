@@ -14,14 +14,13 @@ on:
 jobs:
   Build_Job:
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
     steps:
       - name: Build Job
-        if: github.event_name == 'pull_request'
         run: echo "This is running from Build Job"
   Deploy_Job:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref_name == 'main'
     steps:
       - name: Deploy job
-        if: github.event_name == 'push' && github.ref_name == 'main'
         run: echo "This is from Deploy Job"
-        
