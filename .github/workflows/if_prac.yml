@@ -13,7 +13,7 @@ on:
 jobs:
   Build_Job:
     runs-on: ubuntu-latest
-    if: github.ref_name == 'master' && github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'master'
     steps:
       - name: Build the Image
         run: echo "This is Build Job"
