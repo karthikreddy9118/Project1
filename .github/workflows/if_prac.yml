@@ -19,6 +19,7 @@ jobs:
         run: echo "This is Build Job"
   Deploy_job:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref_name == 'master'
     steps:
       - name: Deploy the Image
         run: echo "This is Deploy Job"
