@@ -17,7 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: This is for dev environment
-        run: echo "This is running from Dev environment Job"
+        run: |
+          echo "This is running from Dev environment Job"
+          exit 1
   prod_env_job:
     if: github.ref_name == 'prod' && github.event_name == 'push'
     runs-on: ubuntu-latest
