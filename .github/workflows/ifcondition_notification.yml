@@ -1,4 +1,4 @@
-name: This is to test environment and send the notification
+name: This is to test environment and send the notifications
 on:
   push:
     branches:
