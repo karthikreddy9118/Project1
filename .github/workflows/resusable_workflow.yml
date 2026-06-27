@@ -1,9 +1,14 @@
 name: This is to use reusable workflow
 on:
   workflow_call:
+    inputs:
+      user_name:
+        description: This is user info
+        required: true
+        type: string
 jobs:
   user_info:
     runs-on: ubuntu-latest
     steps:
       - name: Displaying user info
-        run: echo "Hi This is Karthik Reddy"
+        run: echo "Hi This is ${{inputs.user_name}}"
