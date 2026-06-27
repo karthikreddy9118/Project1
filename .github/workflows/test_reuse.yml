@@ -1,0 +1,5 @@
+name: This is to use Reusable workflow
+on: push
+jobs:
+  my_test_job:
+    uses: ".github/workflows/resusable_workflow.yml"
