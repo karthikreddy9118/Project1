@@ -1,0 +1,9 @@
+name: This is to use reusable workflow
+on:
+  workflow_call:
+jobs:
+  user_info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Displaying user info
+        run: echo "Hi This is Karthik Reddy"
