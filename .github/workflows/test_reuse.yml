@@ -4,4 +4,4 @@ jobs:
   my_test_job:
     uses: "./.github/workflows/resusable_workflow.yml"
     with:
-      user_name: Karthik Reddy
+      user_name: Dharshik Reddy
